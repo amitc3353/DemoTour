@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C166C00C1B390885003E4CBB /* CollectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C166C00B1B390885003E4CBB /* CollectionDemoViewController.m */; };
+		C166C00E1B3908D0003E4CBB /* CollectionViewDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C166C00D1B3908D0003E4CBB /* CollectionViewDemo.storyboard */; };
 		C189AF1A1B38F20B007D2F28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C189AF191B38F20B007D2F28 /* main.m */; };
 		C189AF1D1B38F20B007D2F28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C189AF1C1B38F20B007D2F28 /* AppDelegate.m */; };
 		C189AF201B38F20B007D2F28 /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C189AF1F1B38F20B007D2F28 /* DemoListViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C166C00A1B390885003E4CBB /* CollectionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDemoViewController.h; sourceTree = "<group>"; };
+		C166C00B1B390885003E4CBB /* CollectionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDemoViewController.m; sourceTree = "<group>"; };
+		C166C00D1B3908D0003E4CBB /* CollectionViewDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewDemo.storyboard; sourceTree = "<group>"; };
+		C166C0131B390A11003E4CBB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C189AF141B38F20B007D2F28 /* DemoTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C189AF181B38F20B007D2F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C189AF191B38F20B007D2F28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C166C0091B390856003E4CBB /* CollectionViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C166C00A1B390885003E4CBB /* CollectionDemoViewController.h */,
+				C166C00B1B390885003E4CBB /* CollectionDemoViewController.m */,
+				C166C00D1B3908D0003E4CBB /* CollectionViewDemo.storyboard */,
+			);
+			path = CollectionViewDemo;
+			sourceTree = "<group>";
+		};
+		C166C00F1B390949003E4CBB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C166C0131B390A11003E4CBB /* Constants.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		C189AF0B1B38F20B007D2F28 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +110,8 @@
 				C189AF1E1B38F20B007D2F28 /* DemoListViewController.h */,
 				C189AF1F1B38F20B007D2F28 /* DemoListViewController.m */,
 				C189AF211B38F20B007D2F28 /* Main.storyboard */,
+				C166C00F1B390949003E4CBB /* Common */,
+				C166C0091B390856003E4CBB /* CollectionViewDemo */,
 				C189AF241B38F20B007D2F28 /* Images.xcassets */,
 				C189AF261B38F20B007D2F28 /* LaunchScreen.xib */,
 				C189AF171B38F20B007D2F28 /* Supporting Files */,
@@ -199,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C166C00E1B3908D0003E4CBB /* CollectionViewDemo.storyboard in Resources */,
 				C189AF231B38F20B007D2F28 /* Main.storyboard in Resources */,
 				C189AF281B38F20B007D2F28 /* LaunchScreen.xib in Resources */,
 				C189AF251B38F20B007D2F28 /* Images.xcassets in Resources */,
@@ -220,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C189AF201B38F20B007D2F28 /* DemoListViewController.m in Sources */,
+				C166C00C1B390885003E4CBB /* CollectionDemoViewController.m in Sources */,
 				C189AF1D1B38F20B007D2F28 /* AppDelegate.m in Sources */,
 				C189AF1A1B38F20B007D2F28 /* main.m in Sources */,
 			);

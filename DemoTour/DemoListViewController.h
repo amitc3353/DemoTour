@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, DemoType) {
+    CollectionViewControllerDemoType,
+    TabBarViewControllerDemoType,
+    PageViewControllerDemoType,
+    SplitViewControllerDemoType
+};
+
 @interface DemoListViewController : UIViewController
 
 

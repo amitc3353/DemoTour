@@ -7,6 +7,8 @@
 //
 
 #import "DemoListViewController.h"
+#import "Constants.h"
+#import "CollectionDemoViewController.h"
 
 @interface DemoListViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -41,6 +43,37 @@
     demoListCell.textLabel.text = [self.demoListArray objectAtIndex:indexPath.row];
     
     return demoListCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    switch (indexPath.row) {
+        case CollectionViewControllerDemoType:
+        {
+            CollectionDemoViewController *collectionVC = [[UIStoryboard storyboardWithName:kCollectionViewStoryboardIdentifier bundle:nil] instantiateViewControllerWithIdentifier:kDCollectionViewControllerIdentifier];
+            
+            [self presentViewController:collectionVC animated:YES completion:nil];
+
+            break;
+        }
+            
+        case TabBarViewControllerDemoType:
+            NSLog(@"tabbar");
+            break;
+            
+        case PageViewControllerDemoType:
+            NSLog(@"pageview");
+            break;
+            
+        case SplitViewControllerDemoType:
+            NSLog(@"splitview");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end
