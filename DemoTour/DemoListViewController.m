@@ -54,7 +54,7 @@
         {
             CollectionDemoViewController *collectionVC = [[UIStoryboard storyboardWithName:kCollectionViewStoryboardIdentifier bundle:nil] instantiateViewControllerWithIdentifier:kDCollectionViewControllerIdentifier];
             
-            [self presentViewController:collectionVC animated:YES completion:nil];
+            [self.navigationController pushViewController:collectionVC animated:YES];
 
             break;
         }

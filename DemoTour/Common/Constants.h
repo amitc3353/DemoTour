@@ -19,5 +19,12 @@ static NSString *const kCollectionViewStoryboardIdentifier = @"CollectionViewDem
 static NSString *const kDemoListViewControllerIdentifier = @"DemoListViewController";
 static NSString *const kDCollectionViewControllerIdentifier = @"CollectionDemoViewController";
 
+#pragma mark - Instagram identifiers
+
+static NSString *const kInstaAuthURL = @"https://api.instagram.com/oauth/authorize/";
+static NSString *const kInstaAPIURL = @"https://api.instagram.com/v1/users/";
+static NSString *const kInstaCliedID = @"c3206690860e496a94bf8d3988c98b47";
+static NSString *const kInstaCliedSecret = @"30b36c67da994f1498ad7dd0674014ae";
+static NSString *const kInstaRedirectURI = @"https://www.google.com";
 
 #endif
